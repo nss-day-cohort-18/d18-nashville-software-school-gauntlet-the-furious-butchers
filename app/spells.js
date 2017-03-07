@@ -1,3 +1,5 @@
+'use strict';
+
 /*
   TODO: Modularize this code with IIFE or Browserify
  */
@@ -17,7 +19,7 @@ Gauntlet.SpellBook.Spell = function() {
 
   this.toString = function() {
     return this.name + " of " + this.type + " for " + this.damage + " damage!";
-  }
+  };
 };
 
 /*

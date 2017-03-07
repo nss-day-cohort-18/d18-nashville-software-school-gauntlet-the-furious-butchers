@@ -1,3 +1,4 @@
+'use strict';
 /*
   TODO: Modularize this code with IIFE or Browserify
  */
@@ -16,7 +17,7 @@ Gauntlet.GuildHall.PlayerClass = function() {
 
   this.toString = function() {
     return this.name;
-  }
+  };
 };
 
 /*
@@ -123,4 +124,3 @@ Gauntlet.GuildHall.Sorcerer.prototype = new Gauntlet.GuildHall.Mage();
       - Ninja
       - Assassin
  */
-

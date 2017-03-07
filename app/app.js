@@ -1,3 +1,4 @@
+'use strict';
 /*
   Test code to generate a human player and an orc player
  */

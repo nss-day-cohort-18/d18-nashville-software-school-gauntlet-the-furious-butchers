@@ -1,3 +1,5 @@
+'use strict';
+
 var Weapon = function() {
   this.name = "bare hands";
   this.damage = 1;
@@ -5,7 +7,7 @@ var Weapon = function() {
 
   this.toString = function() {
     return this.name;
-  }
+  };
 };
 
 var Dagger = function() {
@@ -28,4 +30,3 @@ var WarAxe = function() {
   this.hands = 2;
 };
 WarAxe.prototype = new Weapon();
-

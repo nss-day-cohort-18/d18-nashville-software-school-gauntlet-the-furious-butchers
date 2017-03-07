@@ -1,3 +1,5 @@
+'use strict';
+
 Gauntlet.Combatants.Orc = function() {
   this.health = this.health + 20;
   this.species = "Orc";
@@ -13,8 +15,7 @@ Gauntlet.Combatants.Orc = function() {
     // Composes the corresponding player class into the player object
     this.class = new Gauntlet.GuildHall[randomClass]();
     return this.class;
-  }
+  };
 };
 
 Gauntlet.Combatants.Orc.prototype = new Gauntlet.Combatants.Monster();
-
