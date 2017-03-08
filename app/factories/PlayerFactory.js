@@ -24,7 +24,6 @@ app.factory("PlayerFactory", () => {
     health: Math.floor(Math.random() * 40 + 50),
     limbs: ["head", "neck", "arm", "leg", "torso"],
     skinColor: "gray",
-    skinColors: [Player.skinColor],
     strength: 90,
     intelligence: 90,
     toString: function() {
