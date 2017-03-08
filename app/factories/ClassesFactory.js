@@ -84,49 +84,32 @@ app.factory("ClassesFactory", () => {
   };
 
   var getClass = function(UserClass) {
-    return UserClass;
+    if (UserClass === Warrior.name){
+        return Warrior;
+    }
+    if (UserClass === Valkyrie.name){
+        return Valkyrie;
+    }
+    if (UserClass === Berserker.name){
+        return Berserker;
+    }
+    if (UserClass === Monk.name){
+        return Monk;
+    }
+    if (UserClass === Shaman.name){
+        return Shaman;
+    }
+    if (UserClass === Wizard.name){
+        return Wizard;
+    }
+    if (UserClass === Sorcerer.name){
+        return Sorcerer;
+    }
+    if (UserClass === Conjurer.name){
+        return Conjurer;
+  };
   };
 
-  var getFighter = function() {
-    return Fighter;
-  };
-
-  var getWarrior = function() {
-    return Warrior;
-  };
-
-  var getValkyrie = function() {
-    return Valkyrie;
-  };
-
-  var getBerserker = function() {
-    return Berserker;
-  };
-
-  var getMonk = function() {
-    return Monk;
-  };
-
-  var getMage = function() {
-    return Mage;
-  };
-
-  var getShaman = function() {
-    return Shaman;
-  };
-
-  var getWizard = function() {
-    return Wizard;
-  };
-
-  var getConjurer = function() {
-    return Conjurer;
-  };
-
-  var getSorcerer = function() {
-    return Sorcerer;
-  };
-
-  return {getPlayerClass, getFighter, getWarrior, getValkyrie, getBerserker, getMonk, getMage, getShaman, getWizard, getConjurer, getSorcerer, getClass};
+  return {getPlayerClass, getClass};
 
 });

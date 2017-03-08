@@ -9,8 +9,9 @@ $scope.player.class = Object.create(ClassesFactory.getPlayerClass());
 console.log($scope.player);
 
 $scope.getClass = function(){
-	console.log(this.item);
-	$scope.player = Object.create(ClassesFactory.getClass());
+    console.log(this.item);
+	$scope.player.class = Object.create(ClassesFactory.getClass(this.item));
+    console.log($scope.player);
 };
 
 
