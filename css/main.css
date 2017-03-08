@@ -16,9 +16,6 @@ body {
 /*
   Section styles
  */
-.card {
-  display: none; }
-
 .card__prompt {
   font-size: 1.1em;
   font-weight: bold;
@@ -85,5 +82,11 @@ body {
 .btn__text {
   padding: 0 50px 0 20px;
   border-radius: 0 5px 5px 0; }
+
+.raceDescription {
+  margin-top: 2em; }
+
+.raceDescription h3 {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
