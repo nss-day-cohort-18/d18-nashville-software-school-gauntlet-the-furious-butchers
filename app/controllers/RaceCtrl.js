@@ -20,9 +20,7 @@ $scope.getHuman = function(){
 	$scope.isElf = false;
 	$scope.isHuman = true;
 	console.log($scope.player);
-
-
-}
+};
 
 $scope.getElf = function(){
 	$scope.player = Object.create(PlayerFactory.getElf());
@@ -30,9 +28,7 @@ $scope.getElf = function(){
 	$scope.isHuman = false;
 	$scope.isDwarf = false;
 	console.log($scope.player);
-
-
-}
+};
 
 $scope.getDwarf = function(){
 	$scope.player = Object.create(PlayerFactory.getDwarf());
@@ -40,13 +36,11 @@ $scope.getDwarf = function(){
 	$scope.isHuman = false;
 	$scope.isElf = false;
 	console.log($scope.player);
-
-
-}
+};
 
 
 $scope.setPlayer = function(){
 	GameFactory.setGamePlayer($scope.player);
-}
+};
 
 });
