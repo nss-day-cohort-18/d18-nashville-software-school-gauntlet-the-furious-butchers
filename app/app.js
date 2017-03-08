@@ -1,11 +1,11 @@
 'use strict';
 
-var app = angular.module("GuantletApp", ["ngRoute","ngMaterial"]);
+var app = angular.module("GuantletApp", ["ngRoute"]);
 
 app.config( function($routeProvider) {
    $routeProvider.
    when('/', {
-      templateUrl: 'partials/build.html',
+      templateUrl: 'partials/race.html',
       controller: "RaceCtrl"
    }).
    when('/class', {
