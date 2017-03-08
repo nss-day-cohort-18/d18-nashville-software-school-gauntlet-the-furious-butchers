@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("RaceCtrl", function($scope, PlayerFactory, $routeParams) {
+app.controller("RaceCtrl", function($scope, PlayerFactory, $routeParams, GameFactory) {
 
 $scope.isHuman = true;
 $scope.isElf = false;
@@ -28,6 +28,8 @@ $scope.getDwarf = function(){
 	$scope.isHuman = false;
 }
 
-
+$scope.setPlayer = function($scope.player){
+	GameFactory.setGamePlayer($scope.player);
+}
 
 });
