@@ -7,6 +7,9 @@ $scope.isElf = false;
 $scope.isDwarf = false;
 
 
+  
+
+
 // Input for player.name[ng-model]
 // Define $scope.player = {} [Object.create(species)]
 $scope.player = Object.create(PlayerFactory.getPlayer);
@@ -27,6 +30,7 @@ $scope.getDwarf = function(){
 	$scope.isDwarf = true;
 	$scope.isHuman = false;
 }
+
 
 $scope.setPlayer = function($scope.player){
 	GameFactory.setGamePlayer($scope.player);
