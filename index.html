@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<body ng-app="GuantletApp">
 
   <article id="game-container">
 
@@ -167,21 +167,30 @@
 
   </article>
 
-  <!-- bootstrap, jQuery, and Angular links -->
-<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js">
-</script>
-<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
-<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+  <!-- bootstrap, jQuery, Firebase, and Angular links -->
+  <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js">
+  </script>
+  <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
 
-<!-- APP.JS -->
-<script type="text/javascript" src="app/app.js"></script>
 
-<!-- NG FACTORIES -->
-<script src="/app/factories/????Factory.js"></script>
+  <!-- APP.JS -->
+  <script type="text/javascript" src="app/app.js"></script>
 
-<!-- NG CONTROLLERS -->
-<script src="/app/controllers/????Ctrl.js"></script>
+  <!-- NG FACTORIES -->
+  <script src="/app/factories/ClassesFactory.js"></script>
+  <script src="/app/factories/PlayerFactory.js"></script>
+  <script src="/app/factories/SpellbookFactory.js"></script>
+  <script src="/app/factories/WeaponFactory.js"></script>
+
+
+  <!-- NG CONTROLLERS -->
+  <script src="/app/controllers/RaceCtrl.js"></script>
+  <script src="/app/controllers/ClassCtrl.js"></script>
+  <script src="/app/controllers/WeaponSpellCtrl.js"></script>
+  <script src="/app/controllers/CombatCtrl.js"></script>
 
 
 </body>

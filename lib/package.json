@@ -11,8 +11,10 @@
   "devDependencies": {
     "angular": "^1.6.2",
     "angular-route": "^1.6.2",
+    "angularfire": "^2.3.0",
     "bootstrap": "^3.3.7",
     "copy": "^0.3.0",
+    "firebase": "^3.7.0",
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.1.0",
