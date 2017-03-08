@@ -1,16 +1,16 @@
 'use strict';
 
-app.controller("ClassCtrl", function($scope, GameFactory, ClassFactory) {
+app.controller("ClassCtrl", function($scope, GameFactory, ClassesFactory) {
 
 $scope.player = GameFactory.getGamePlayer();
 console.log($scope.player);
 
-$scope.player = Object.create(ClassFactory.getPlayerClass());
+$scope.player.class = Object.create(ClassesFactory.getPlayerClass());
 console.log($scope.player);
 
 $scope.getClass = function(){
 	console.log(this.item);
-	$scope.player = Object.create(ClassFactory.getClass());
+	$scope.player = Object.create(ClassesFactory.getClass());
 };
 
 
