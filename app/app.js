@@ -1,4 +1,28 @@
 'use strict';
+
+var app = angular.module("GuantletApp", ["ngRoute","ngMaterial"]);
+
+app.config( function($routeProvider) {
+   $routeProvider.
+   when('/', {
+      templateUrl: 'partials/build.html',
+      controller: "RaceCtrl"
+   }).
+   when('/class', {
+      templateUrl: 'partials/class.html',
+      controller: "ClassCtrl"
+   }).
+   when('/weaponspell', {
+      templateUrl: 'partials/weapon-spell.html',
+      controller: "WeaponSpellCtrl"
+   }).
+   when('/combat', {
+      templateUrl: 'partials/combat.html',
+      controller: "combatCtrl"
+   }).
+   otherwise('/', {});
+});
+
 /*
   Test code to generate a human player and an orc player
  */
