@@ -101,4 +101,11 @@ body {
   font-weight: bold;
   text-align: center; }
 
+#playerPic {
+  height: 5em; }
+
+#monsterPic {
+  height: 5em; }
+
+
 /*# sourceMappingURL=main.css.map */
