@@ -14,5 +14,8 @@ $scope.getClass = function(){
     console.log($scope.player);
 };
 
+$scope.setPlayer = function(){
+	GameFactory.setGamePlayer($scope.player);
+};
 
 });

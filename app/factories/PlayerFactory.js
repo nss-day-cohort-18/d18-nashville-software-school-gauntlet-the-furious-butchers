@@ -42,9 +42,6 @@ app.factory("PlayerFactory", () => {
         "!"
       ].join("");
       return output;
-    },
-    setWeapon: function(newWeapon) {
-      Player.weapon = newWeapon;
     }
   };
 
