@@ -39,19 +39,7 @@ body {
   Button styles
  */
 
-.btn {
-  text-decoration: none;
-  background-color: white;
-  color: #888;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 5px;
-  min-width: 260px;
-}
+
 
 .btn--orange {
   border-color: #FF4136;
@@ -107,3 +95,17 @@ body {
 .raceDescription h3 {
     text-align: center;
 }
+
+
+//Combat Styles
+
+#playerPic {
+  height: 5em;
+}
+#monsterPic {
+  height: 5em;
+}
+
+
+
+
