@@ -1,6 +1,6 @@
-<div class="row" ng-show="!player.class.magical">
-    <h2>Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
-    <h1>Choose Your Weapon!</h3>
+<div class="row center-align" ng-show="!player.class.magical">
+    <h2 class="panel-title white-text deep-orange lighten-2">Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
+    <h1 class="name-div">Choose Your Weapon!</h3>
     <label class="radio-inline">
         <input type="radio" name="weaponspell"  ng-click="equipDagger()"> Dagger
     </label>
@@ -12,9 +12,9 @@
     </label>
 </div>
 
-<div class="row" ng-show="player.class.magical">
-    <h2>Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
-    <h1>Choose Your Spell!</h3>
+<div class="row center-align" ng-show="player.class.magical">
+    <h2 class="panel-title white-text deep-orange lighten-2">Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
+    <h1 class="name-div">Choose Your Spell!</h3>
     <label class="radio-inline">
         <input type="radio" name="weaponspell" ng-click="equipSphere()"> Sphere
     </label>
@@ -25,14 +25,14 @@
 
 <div class="row" ng-show="player.weapon.name == 'dagger'">
     <div class="col m8 offset-m2">
-        <h2 class="header">Dagger</h2>
+        <h2 class="header panel-title card-panel teal lighten-2">Dagger</h2>
     <div class="card horizontal">
         <div class="card-image">
             <img src="http://lorempixel.com/100/190/nature/6">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>A small, one handed weapon that does +4 damage </p>
+                <p class="center-align weap">A small, one handed weapon that does +4 damage </p>
             </div>
         </div>
     </div>
@@ -41,14 +41,14 @@
 
 <div class="row" ng-show="player.weapon.name == 'BroadSword'">
     <div class="col m8 offset-m2">
-        <h2 class="header">BroadSword</h2>
+        <h2 class="header panel-title card-panel teal lighten-2">BroadSword</h2>
     <div class="card horizontal">
         <div class="card-image">
             <img src="http://lorempixel.com/100/190/nature/6">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>A large, two handed weapon that does +14 damage</p>
+                <p class="center-align weap">A large, two handed weapon that does +14 damage</p>
             </div>
         </div>
     </div>
@@ -57,14 +57,14 @@
 
 <div class="row" ng-show="player.weapon.name == 'war axe'">
     <div class="col m8 offset-m2">
-        <h2 class="header">War Axe</h2>
+        <h2 class="header panel-title card-panel teal lighten-2">War Axe</h2>
     <div class="card horizontal">
         <div class="card-image">
             <img src="http://lorempixel.com/100/190/nature/6">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>A large, two handed weapon that does +18 damage</p>
+                <p class="center-align weap">A large, two handed weapon that does +18 damage</p>
             </div>
         </div>
     </div>
@@ -73,14 +73,14 @@
 
 <div class="row" ng-show="player.weapon.name == 'sphere'">
     <div class="col m8 offset-m2">
-        <h2 class="header">Sphere</h2>
+        <h2 class="header panel-title card-panel teal lighten-2">Sphere</h2>
     <div class="card horizontal">
         <div class="card-image">
             <img src="http://lorempixel.com/100/190/nature/6">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>A powerful magic sphere that does between 0 and 20 damage </p>
+                <p class="center-align weap">A powerful magic sphere that does between 0 and 20 damage </p>
             </div>
         </div>
     </div>
@@ -89,24 +89,24 @@
 
 <div class="row" ng-show="player.weapon.name == 'magic missile'">
     <div class="col m8 offset-m2">
-        <h2 class="header">Magic Missile</h2>
+        <h2 class="header panel-title card-panel teal lighten-2">Magic Missile</h2>
     <div class="card horizontal">
         <div class="card-image">
             <img src="http://lorempixel.com/100/190/nature/6">
         </div>
         <div class="card-stacked">
             <div class="card-content">
-                <p>A magical projectile that does between 0 and 30 damage</p>
+                <p class="center-align weap">A magical projectile that does between 0 and 30 damage</p>
             </div>
         </div>
     </div>
     </div>
 </div>
 
-<div class="card__button">
-  <a class="card__link btn btn--big btn--orange" ng-click="setPlayer()" ng-href="#!/combat">
-    <span class="btn__prompt">></span>
-    <span class="btn__text">Select class</span>
+<div class="center-align">
+  <a class="deep-orange lighten-2 btn waves-effect waves-light btn-large" ng-click="setPlayer()" ng-href="#!/combat">
+    <i class="material-icons left">skip_next</i>
+    Dive Into The Dungeon
   </a>
 </div>
 </div>
