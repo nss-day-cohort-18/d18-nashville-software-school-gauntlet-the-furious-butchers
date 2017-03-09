@@ -5,7 +5,7 @@ body {
   font-size: 3em; }
 
 .field {
-  margin: 20px 0 0 0; }
+  margin: 0; }
 
 .field__textinput {
   font-size: 1em;
@@ -24,29 +24,16 @@ body {
 
 .card__button {
   font-size: 1.1em;
-  margin: 30px 0 0 0;
+  margin: 0;
   text-align: center; }
 
 /*
   Button styles
  */
-.btn {
-  text-decoration: none;
-  background-color: white;
-  color: #888;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 10px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 5px;
-  min-width: 260px; }
-
 .btn--orange {
-  border-color: #FF4136;
+  border-color: #ff8a65;
   color: white;
-  background-color: #FF4136; }
+  background-color: #ff8a65; }
 
 .btn--blue {
   border-color: #0074D9;
@@ -84,9 +71,34 @@ body {
   border-radius: 0 5px 5px 0; }
 
 .raceDescription {
-  margin-top: 2em; }
+  margin: 0; }
 
 .raceDescription h3 {
+  text-align: center; }
+
+.radio-inline {
+  font-size: .75em;
+  color: #ff8a65;
+  margin-bottom: 5px; }
+
+.panel-title {
+  font-size: .75em;
+  text-align: center; }
+
+.panel-body {
+  font-size: .35em; }
+
+.race-choice {
+  font-size: .75em;
+  margin: 0; }
+
+.name-div {
+  text-align: center;
+  font-size: .66em; }
+
+.panel-para {
+  font-size: .5em;
+  font-weight: bold;
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
