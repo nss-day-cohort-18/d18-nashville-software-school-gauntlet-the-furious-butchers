@@ -1,9 +1,43 @@
+<div class="modal" id="modalLose" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-small" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Defeat!</h4>
+      </div>
+      <div class="modal-body">
+        <p>You have been defeated, your enemies drink your tears.</p>
+      </div>
+      <div class="modal-footer">
+        <button ng-click="startOver()" class="btn" data-dismiss="modal">Try Again</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal" id="modalWin" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-small" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Victory</h4>
+      </div>
+      <div class="modal-body">
+        <p>You are victorious!!!!</p>
+      </div>
+      <div class="modal-footer">
+        <button ng-click="startOver()" class="btn" data-dismiss="modal">End Game</button>
+        <button ng-click="keepGoing()" class="btn" data-dismiss="modal">Continue On!</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <div class="row">
 	<div class="col s6">
-		<h2 class="left-align">{{player.playerName}}</h1>
+		<h2 class="left-align">{{player.playerName}}</h2>
 	</div>
 	<div class="col s6">
-		<h2 class="right-align">{{monster.species}} the {{monster.class.name}}</h1>	
+		<h2 class="right-align">{{monster.species}} the {{monster.class.name}}</h2>	
 	</div>
 </div>
 <div class="row">
@@ -35,11 +69,12 @@
 	</div>	
 </div>
 <div class="row center-align">
-	<a class="waves-effect waves-light btn">Attack!!</a>
+	<a class="waves-effect waves-light btn" ng-click="makeAttack()">Attack!!</a>
 </div>
 <div class="row center-align">
-	<p class="panel hoverable blue-grey lighten-5"></p>
+	<div id="combat-log" class="panel hoverable blue-grey lighten-5"></div>
 </div>
+
 
 
 
