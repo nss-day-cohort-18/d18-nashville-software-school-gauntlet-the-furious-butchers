@@ -107,7 +107,7 @@ app.factory("ClassesFactory", () => {
     }
     if (UserClass === Conjurer.name){
         return Conjurer;
-  };
+  }
   };
 
   return {getPlayerClass, getClass};

@@ -1,48 +1,114 @@
+<!-- Select class with ng-repeat and getClass click -->
+
 <div class="row">
     <h2>Current Character: {{player.playerName}} the {{player.species}}</h2>
     <h1>Choose Your Class</h3>
     <label class="radio-inline" ng-repeat="item in player.allowedClasses">
-        <input type="radio" name="class"  value="{{item}}" ng-click="getClass()"> {{item}}
+        <input type="radio" name="class" ng-value="{{item}}" ng-click="getClass()"> {{item}}
     </label>
 </div>
 
-    <!-- <div class="row raceDescription" ng-show="isHuman">
+    <!-- Description cards for each class -->
+    <div class="row" ng-show="player.class.name == 'Warrior'">
         <div class="col-md-8 col-md-offset-2 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Humans</h3>
+                <h3 class="panel-title">Warrior</h3>
             </div>
             <div class="panel-body">
-                <p>Humans who seek adventure are the most daring and ambitious members of a daring and ambitious race. They seek to earn glory in the eyes of their fellows by amassing power, wealth, and fame. More than other people, humans champion causes rather than territories or groups.</p>
-                <p> As a human, you can play as a Warrior, Berserker, Wizard, or Conjurer.
+                <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
+                <p> As a Warrior you will use weapons to inflict damage to your enemies.
             </div>
         </div>
     </div>
-    <div class="row" ng-show="isDwarf">
+    <div class="row" ng-show="player.class.name == 'Valkyrie'">
         <div class="col-md-8 col-md-offset-2 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Dwarf</h3>
+                <h3 class="panel-title">Valkyrie</h3>
             </div>
             <div class="panel-body">
-                <p>Dwarves who take up the adventuring life might be motivated by a desire for treasure—for its own sake, for a specific purpose, or even out of an altruistic desire to help others. Other dwarves are driven by the command or inspiration of a deity, a direct calling or simply a desire to bring glory to one of the dwarf gods. Or a dwarf might search for the axe wielded by a mighty ancestor, lost on the field of battle centuries ago.</p>
-                <p> As a dwarf, you can play as a Warrior, Berserker, Valkyrie, or Monk.
+                <p>The Valkyrie is a follower of Odin who has dedicated their afterlife to gathering the souls of fallen warriors. They are strong fighters who uphold the tenants of righteousness and honor. They engage any and all evil enemies that cross their path. </p>
+                <p> As a Valkyrie you will use weapons to inflict damage to your enemies.
             </div>
         </div>
     </div>
-    <div class="row" ng-show="isElf">
+
+    <div class="row" ng-show="player.class.name == 'Berserker'">
         <div class="col-md-8 col-md-offset-2 panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Elf</h3>
+                <h3 class="panel-title">Berserker</h3>
             </div>
             <div class="panel-body">
-                <p>Elves take up adventuring out of wanderlust. Since they are so long-lived, they can enjoy centuries of exploration and discovery. They dislike the pace of human society, which is both regimented from day to day but constantly changes over decades, so they find careers that let them travel freely and set their own pace. Elves also enjoy exercising their martial prowess or gaining greater magical power, and adventuring allows them to do so.</p>
-                <p> As an elf, you can play as a Shaman, Wizard, Conjurer, or Sorcerer.
+                <p>Berserkers are warriors who have honed their damage capabilities to become nigh-unkillable soldiers of war. </p>
+                <p> As a Berserker you will use weapons to inflict damage to your enemies.
             </div>
         </div>
     </div>
+
+    <div class="row" ng-show="player.class.name == 'Monk'">
+        <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Monk</h3>
+            </div>
+            <div class="panel-body">
+                <p>Amongst Gauntlet's most deadly warriors, the monks train their bodies and minds so that they may become the foremost holy warriors of the land. Within their holy temples, Monks endure harsh trials both physical and spiritual, proving their devotion and attaining unmatched focus in battle.   </p>
+                <p> As a Monk you will use weapons to inflict damage to your enemies.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="player.class.name == 'Shaman'">
+        <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Shaman</h3>
+            </div>
+            <div class="panel-body">
+                <p>Shaman are mortal mediators between the very elements themselves. Often spiritual guides of their communities, these powerful practitioners commune with the ancestors and seek to balance the raging elemental forces, and can call upon them in battle to scorch and blast their enemies, or to strengthen and heal their allies. Shaman can unleash devestating elemental effects, smite enemies with lightning strikes and bursts of lava, and summon powerful elementals to their aid.</p>
+                <p> As a Shaman you will use spells to inflict damage to your enemies.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="player.class.name == 'Wizard'">
+        <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Wizard</h3>
+            </div>
+            <div class="panel-body">
+                <p>Wizards are supreme magic-users, defined and united as a class by the spells they cast. Their magic conjures elementals from other planes of existence, glimpses the future, or turns slain foes into shambling zombies. Their mightiest spells change one substance into another or alter a creature’s form, open pathways to other planes of existence, or even kill with a single word.</p>
+                <p> As a Wizard you will use spells to inflict damage to your enemies.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="player.class.name == 'Conjurer'">
+        <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Conjurer</h3>
+            </div>
+            <div class="panel-body">
+                <p>Conjurers are trained to coax metaphysical forces forth from the elements which comprise all of creation, allowing them to weave powerful spells. Attuned to the essence of all things around them, the Conjurers' intimacy with all forms of being enables them to shift between both offensive and defensive magic as needed.</p>
+                <p> As a Conjurer you will use spells to inflict damage to your enemies.
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-show="player.class.name == 'Sorcerer'">
+        <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sorcerer</h3>
+            </div>
+            <div class="panel-body">
+                <p>Sorcerers look within themselves for arcane prowess and draw forth might few mortals can imagine. While some seek to control their abilities through meditation and discipline, becoming masters of their fantastic birthright, others give in to their magic, letting it rule their lives with often explosive results.</p>
+                <p> As a Sorcerer you will use spells to inflict damage to your enemies.
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to next partial -->
     <div class="card__button">
-      <a class="card__link btn btn--big btn--orange" ng-click="setPlayer()" ng-href="#!/class">
+      <a class="card__link btn btn--big btn--orange" ng-click="setPlayer()" ng-href="#!/weaponspell">
         <span class="btn__prompt">></span>
-        <span class="btn__text">Select class</span>
+        <span class="btn__text">Select weapons/spells</span>
       </a>
     </div>
-</div> -->
+</div>
