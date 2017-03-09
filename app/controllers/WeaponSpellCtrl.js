@@ -5,26 +5,26 @@ app.controller("WeaponSpellCtrl", function($scope, GameFactory, $routeParams, We
 $scope.player = GameFactory.getGamePlayer();
 
 $scope.equipDagger = function(){
-	$scope.player.weapon = Object.create(WeaponFactory.getDagger())
+	$scope.player.weapon = Object.create(WeaponFactory.getDagger());
 };
 $scope.equipBroadsword = function(){
-	$scope.player.weapon = Object.create(WeaponFactory.getBroadsword())
+	$scope.player.weapon = Object.create(WeaponFactory.getBroadsword());
 };
 $scope.equipWarAxe = function(){
-	$scope.player.weapon = Object.create(WeaponFactory.getWarAxe())
+	$scope.player.weapon = Object.create(WeaponFactory.getWarAxe());
 };
 $scope.equipNothing = function(){
-	$scope.player.weapon = Object.create(WeaponFactory.getWeapon())
+	$scope.player.weapon = Object.create(WeaponFactory.getWeapon());
 };
 $scope.equipSphere = function(){
-	$scope.player.weapon = Object.create(SpellbookFactory.getSphere())
+	$scope.player.weapon = Object.create(SpellbookFactory.getSphere());
 };
 $scope.equipMagicMissile = function(){
-	$scope.player.weapon = Object.create(SpellbookFactory.getMagicMissile())
+	$scope.player.weapon = Object.create(SpellbookFactory.getMagicMissile());
 };
 
 $scope.setPlayer = function(){
 	GameFactory.setGamePlayer($scope.player);
-}
+};
 
 });
