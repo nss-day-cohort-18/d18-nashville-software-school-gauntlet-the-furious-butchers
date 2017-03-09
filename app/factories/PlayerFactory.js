@@ -71,8 +71,8 @@ app.factory("PlayerFactory", () => {
 
   var Elf = Object.create(Player);
   Elf.species = "Elf";
-  Elf.intelligence = Elf.intelligence - 20;
-  Elf.strength = Elf.strength - 10;
+  Elf.intelligence = Elf.intelligence + 30;
+  Elf.strength = Elf.strength - 20;
   Elf.skinColors = ["brown", "red", "white", "disease"];
   Elf.randomSkin = Math.round(Math.random() * (Elf.skinColors.length-1));
   Elf.skinColor = Elf.skinColors[Elf.randomSkin];
@@ -99,7 +99,7 @@ app.factory("PlayerFactory", () => {
   var Skeleton = Object.create(Monster);
   Skeleton.species = "Skeleton";
   Skeleton.health = Skeleton.health + 20;
-  Skeleton.intelligence = Skeleton.intelligence + 10;
+  Skeleton.intelligence = Skeleton.intelligence + 20;
   Skeleton.allowedClasses = ["Berserker", "Warrior", "Wizard", "Sorcerer"];
 
   var Beholder = Object.create(Monster);
