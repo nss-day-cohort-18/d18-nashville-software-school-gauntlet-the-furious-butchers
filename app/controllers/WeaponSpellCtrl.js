@@ -8,7 +8,7 @@ $scope.equipDagger = function(){
 	$scope.player.weapon = Object.create(WeaponFactory.getDagger());
 };
 $scope.equipBroadsword = function(){
-	$scope.player.weapon = Object.create(WeaponFactory.getBroadsword());
+  $scope.player.weapon = Object.create(WeaponFactory.getBroadSword());
 };
 $scope.equipWarAxe = function(){
 	$scope.player.weapon = Object.create(WeaponFactory.getWarAxe());
