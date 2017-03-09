@@ -18,7 +18,7 @@ app.config( function($routeProvider) {
    }).
    when('/combat', {
       templateUrl: 'partials/combat.html',
-      controller: "combatCtrl"
+      controller: "CombatCtrl"
    }).
    otherwise('/', {});
 });
