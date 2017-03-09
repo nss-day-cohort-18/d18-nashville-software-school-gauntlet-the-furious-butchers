@@ -2,7 +2,7 @@
 
 <div class="row center-align">
     <h2 class="panel-title white-text deep-orange lighten-2">Current Character: {{player.playerName}} the {{player.species}}</h2>
-    <h1 class="name-div">Choose Your Class</h3>
+    <h1 class="name-div">Choose Your Class!</h3>
     <label class="radio-inline" ng-repeat="item in player.allowedClasses">
         <input type="radio" name="class" ng-value="{{item}}" ng-click="getClass()"> {{item}}
     </label>

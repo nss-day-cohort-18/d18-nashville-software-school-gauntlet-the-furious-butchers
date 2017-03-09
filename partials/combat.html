@@ -43,12 +43,12 @@
 <div class="row">
 	<div class="col s5">
 		<div class="progress left-align">
-		  <div class="determinate" style="width: 100%"></div>
+		  <div class="determinate" style="width: {{playerHealth}}%"></div>
 		</div>
 	</div>
 	<div class="col s5 offset-s2">
 		<div class="progress right-align">
-		  <div class="determinate" style="width: 100%"></div>
+		  <div class="determinate" style="width: {{monsterHealth}}%"></div>
 		</div>
 	</div>
 </div>
@@ -57,7 +57,7 @@
 		<h4 class="left-align">{{player.health}}</h4>
 	</div>
 	<div class="col s4 offset-s4">
-		<h4 class="right-align">{{monster.health}}</h4>	
+		<h4 class="right-align">{{monster.health}}</h4>
 	</div>
 </div>
 <div class="row">
@@ -66,16 +66,14 @@
 	</div>
 	<div class="col s5 offset-s2 right-align">
 		<img id="monsterPic" class="right-align" src="images/wizard8bit.jpg">
-	</div>	
+	</div>
 </div>
 <div class="row center-align">
-	<a class="waves-effect waves-light btn" ng-click="makeAttack()">Attack!!</a>
+
+	<a class=" deep-orange lighten-2 waves-effect waves-light btn" ng-click="makeAttack()">Attack!!</a>
+
 </div>
 <div class="row center-align">
 	<div id="combat-log" class="panel hoverable blue-grey lighten-5"></div>
 </div>
-
-
-
-
 
