@@ -1,73 +1,112 @@
-<div class="row">
-    <h2>Current Character: {{player.playerName}} the {{player.species}} {{player.class}} </h2>
-    <h1>Choose Your Class</h3>
-    <label class="radio-inline" ng-repeat="item in player.allowedweaponsorsomething">
-        <input type="radio" name="weaponspell"  value="{{item}}" ng-click=""> {{item}}
+<div class="row" ng-show="!player.class.magical">
+    <h2>Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
+    <h1>Choose Your Weapon!</h3>
+    <label class="radio-inline">
+        <input type="radio" name="weaponspell"  ng-click="equipDagger()"> Dagger
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="weaponspell"  ng-click="equipBroadsword()"> BroadSword
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="weaponspell"  ng-click="equipWarAxe()"> WarAxe
     </label>
 </div>
 
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Dagger</h3>
+<div class="row" ng-show="player.class.magical">
+    <h2>Current Character: {{player.playerName}} the {{player.species}} {{player.class.name}} </h2>
+    <h1>Choose Your Spell!</h3>
+    <label class="radio-inline">
+        <input type="radio" name="weaponspell" ng-click="equipSphere()"> Sphere
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="weaponspell" ng-click="equipMagicMissile()"> Magic Missile
+    </label>
+</div>
+
+<div class="row" ng-show="player.weapon.name == 'dagger'">
+    <div class="col m8 offset-m2">
+        <h2 class="header">Dagger</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
         </div>
-        <div class="panel-body">
-            <p>A one handed </p>
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>A small, one handed weapon that does +4 damage </p>
+            </div>
         </div>
+    </div>
     </div>
 </div>
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Warrior</h3>
+
+<div class="row" ng-show="player.weapon.name == 'BroadSword'">
+    <div class="col m8 offset-m2">
+        <h2 class="header">BroadSword</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
         </div>
-        <div class="panel-body">
-            <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
-            <p> As a Warrior you will use weapons to inflict damage to your enemies.
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>A large, two handed weapon that does +14 damage</p>
+            </div>
         </div>
+    </div>
     </div>
 </div>
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Warrior</h3>
+
+<div class="row" ng-show="player.weapon.name == 'war axe'">
+    <div class="col m8 offset-m2">
+        <h2 class="header">War Axe</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
         </div>
-        <div class="panel-body">
-            <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
-            <p> As a Warrior you will use weapons to inflict damage to your enemies.
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>A large, two handed weapon that does +18 damage</p>
+            </div>
         </div>
+    </div>
     </div>
 </div>
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Warrior</h3>
+
+<div class="row" ng-show="player.weapon.name == 'sphere'">
+    <div class="col m8 offset-m2">
+        <h2 class="header">Sphere</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
         </div>
-        <div class="panel-body">
-            <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
-            <p> As a Warrior you will use weapons to inflict damage to your enemies.
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>A powerful magic sphere that does between 0 and 20 damage </p>
+            </div>
         </div>
+    </div>
     </div>
 </div>
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Warrior</h3>
+
+<div class="row" ng-show="player.weapon.name == 'magic missile'">
+    <div class="col m8 offset-m2">
+        <h2 class="header">Magic Missile</h2>
+    <div class="card horizontal">
+        <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
         </div>
-        <div class="panel-body">
-            <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
-            <p> As a Warrior you will use weapons to inflict damage to your enemies.
+        <div class="card-stacked">
+            <div class="card-content">
+                <p>A magical projectile that does between 0 and 30 damage</p>
+            </div>
         </div>
+    </div>
     </div>
 </div>
-<div class="row" ng-show="">
-    <div class="col-md-8 col-md-offset-2 panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Warrior</h3>
-        </div>
-        <div class="panel-body">
-            <p>Perhaps the most diverse class in the world of Gauntlet. Be they questing knights, conquering overlords, elite footsoldiers, or hardened mercenaries - they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.</p>
-            <p> As a Warrior you will use weapons to inflict damage to your enemies.
-        </div>
-    </div>
+
+<div class="card__button">
+  <a class="card__link btn btn--big btn--orange" ng-click="setPlayer()" ng-href="#!/combat">
+    <span class="btn__prompt">></span>
+    <span class="btn__text">Select class</span>
+  </a>
+</div>
 </div>
