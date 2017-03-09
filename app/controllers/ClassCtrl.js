@@ -13,5 +13,8 @@ $scope.getClass = function(){
 	$scope.player = Object.create(ClassesFactory.getClass());
 };
 
+$scope.setPlayer = function(){
+	GameFactory.setGamePlayer($scope.player);
+};
 
 });
