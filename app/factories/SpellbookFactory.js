@@ -19,14 +19,14 @@ var Spell = {
  */
 var Sphere = Object.create(Spell);
 Sphere.name = "sphere";
-Sphere.damage = Math.floor(Math.random() * 10 + 10);
+Sphere.damage = Math.floor(Math.random() * 10 + 30);
 var sphereRandom = Math.round(Math.random() * (Sphere.damageTypes.length - 1));
 Sphere.type = Sphere.damageTypes[sphereRandom];
 
 
 var MagicMissile = Object.create(Spell);
 MagicMissile.name = "magic missile";
-MagicMissile.damage = Math.floor(Math.random() * 20 + 10);
+MagicMissile.damage = Math.floor(Math.random() * 20 + 40);
 var missileRandom = Math.round(Math.random() * (MagicMissile.damageTypes.length - 1));
 MagicMissile.type = MagicMissile.damageTypes[missileRandom];
 

@@ -102,17 +102,33 @@ body {
   text-align: center; }
 
 #playerPic {
-  height: 5em; }
+  height: 5em;
+  display: none; }
 
 #monsterPic {
-  height: 5em; }
+  height: 5em;
+  display: none; }
 
 #combat-log {
   max-height: 4em;
   overflow: scroll; }
 
 h4 {
+  margin: 0;
+  font-size: .5em; }
+
+h3 {
   margin: 0; }
+
+h2 {
+  margin: 0;
+  font-size: .7em; }
+
+.row {
+  margin: 0; }
+
+.combat-text {
+  font-size: .4em; }
 
 .weap {
   font-size: .75em; }
