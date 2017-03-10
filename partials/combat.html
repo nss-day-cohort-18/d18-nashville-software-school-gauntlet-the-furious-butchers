@@ -5,7 +5,7 @@
         <h4 class="modal-title">Defeat!</h4>
       </div>
       <div class="modal-body">
-        <p>You have been defeated, your enemies drink your tears.</p>
+        <p class="combat-text">You have been defeated, your enemies drink your tears.</p>
       </div>
       <div class="modal-footer">
         <button ng-click="startOver()" class="btn" data-dismiss="modal">Try Again</button>
@@ -21,7 +21,7 @@
         <h4 class="modal-title">Victory</h4>
       </div>
       <div class="modal-body">
-        <p>You are victorious!!!!</p>
+        <p class="combat-text">You are victorious!!!!</p>
       </div>
       <div class="modal-footer">
         <button ng-click="startOver()" class="btn" data-dismiss="modal">End Game</button>
@@ -61,16 +61,19 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col s5 both-images">
+
+	<div class="col s5 offset-s1 both-images">
+
 		<img id="playerPic" class="left-align" src="images/wizard8bit.jpg">
 	</div>
-	<div class="col s5 offset-s2 right-align">
+	<div class="col s5  right-align">
 		<img id="monsterPic" class="right-align" src="images/wizard8bit.jpg">
 	</div>
 </div>
 <div class="row center-align">
 
 	<a class=" deep-orange lighten-2 waves-effect waves-light btn" ng-click="makeAttack()">Attack!!</a>
+	<a class="deep-purple lighten-2 waves-effect waves-light btn" ng-show="useSpecial" ng-click="special()">Special!!</a>
 
 </div>
 <div class="row center-align">
