@@ -4,7 +4,7 @@ app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, Spe
 ///////////////////
 //Initialize Modals
 ///////////////////
-  
+
 
   $scope.player = GameFactory.getGamePlayer();
   $scope.monster = PlayerFactory.getMonster();
@@ -14,9 +14,16 @@ app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, Spe
 
   var playerDamage = 0;
   var monsterDamage = 0;
+
   var playerHealing = 0;
 
   $scope.player.health = Math.max(1, $scope.player.health);
+
+  $(document).ready(function() {
+    $("#playerPic").animate({left:200, opacity:"show"}, 3500);
+    $("#monsterPic").animate({left:200, opacity:"show"}, 3500);
+  });
+
 
   $scope.monster.randomMonClass = function() {
     // Get a random index from the allowed classes array
@@ -36,6 +43,7 @@ app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, Spe
 //////////////////
 //Create Monter
 //////////////////
+
     if ($scope.player.gameCount === 4) {
       $scope.player.gameCount = Math.floor((Math.random()*3)+1);
     }
