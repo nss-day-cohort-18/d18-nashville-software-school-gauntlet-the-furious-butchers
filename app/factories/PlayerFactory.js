@@ -57,6 +57,7 @@ app.factory("PlayerFactory", () => {
   Human.randomSkin = Math.round(Math.random() * (Human.skinColors.length-1));
   Human.skinColor = Human.skinColors[Human.randomSkin];
   Human.allowedClasses = ["Warrior", "Berserker", "Wizard", "Conjurer"];
+  Human.speciesImage = "http://piskel-imgstore-b.appspot.com/img/417e45cf-0532-11e7-9df7-59d2b040d17b.gif";
 
   var Dwarf = Object.create(Player);
   Dwarf.species = "Dwarf";
@@ -66,6 +67,7 @@ app.factory("PlayerFactory", () => {
   Dwarf.randomSkin = Math.round(Math.random() * (Dwarf.skinColors.length-1));
   Dwarf.skinColor = Dwarf.skinColors[Dwarf.randomSkin];
   Dwarf.allowedClasses = ["Warrior", "Berserker", "Valkyrie", "Monk"];
+  Dwarf.speciesImage = "http://piskel-imgstore-b.appspot.com/img/11e8f578-0536-11e7-9729-59d2b040d17b.gif";
 
   var Elf = Object.create(Player);
   Elf.species = "Elf";
@@ -75,6 +77,7 @@ app.factory("PlayerFactory", () => {
   Elf.randomSkin = Math.round(Math.random() * (Elf.skinColors.length-1));
   Elf.skinColor = Elf.skinColors[Elf.randomSkin];
   Elf.allowedClasses = ["Shaman", "Wizard", "Conjurer", "Sorcerer"];
+  Elf.speciesImage = "http://piskel-imgstore-b.appspot.com/img/761f6ed9-053a-11e7-b279-1756e446e1a5.gif";
 
 
   /*
@@ -93,18 +96,21 @@ app.factory("PlayerFactory", () => {
   Orc.randomSkin = Math.round(Math.random() * (Orc.skinColors.length-1));
   Orc.skinColor = Orc.skinColors[Orc.randomSkin];
   Orc.allowedClasses = ["Shaman", "Warrior", "Berserker"];
+  Orc.speciesImage = "https://files.slack.com/files-tmb/T03F2SDTJ-F4GCCTW58-d922af1092/orcpiskal_360.png";
 
   var Skeleton = Object.create(Monster);
   Skeleton.species = "Skeleton";
   Skeleton.health = Skeleton.health + 20;
   Skeleton.intelligence = Skeleton.intelligence + 20;
   Skeleton.allowedClasses = ["Berserker", "Warrior", "Wizard", "Sorcerer"];
+  Skeleton.speciesImage = "http://piskel-imgstore-b.appspot.com/img/76d46745-05b1-11e7-b564-7ff42260f60b.gif";
 
   var Beholder = Object.create(Monster);
   Beholder.species = "Beholder";
   Beholder.health = Beholder.health + 70;
   Beholder.intelligence = Beholder.intelligence + 70;
   Beholder.allowedClasses = ["Shaman", "Conjurer", "Wizard", "Sorcerer"];
+  Beholder.speciesImage = "../images/beholder.png";
 
   var getPlayer = function() {
     return Player;
