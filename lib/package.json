@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "angular": "^1.6.2",
+    "angular-audio": "^1.7.3",
     "angular-route": "^1.6.2",
     "angularfire": "^2.3.0",
     "bootstrap": "^3.3.7",
