@@ -17,6 +17,7 @@ app.factory("PlayerFactory", () => {
   */
 
   var Player = {
+    gameCount: 1,
     species: null,
     class: null,
     weapon: null,
