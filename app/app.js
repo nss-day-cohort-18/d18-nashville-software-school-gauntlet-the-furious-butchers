@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("GuantletApp", ["ngRoute"]);
+var app = angular.module("GuantletApp", ["ngRoute", "ngAudio"]);
 
 app.config( function($routeProvider) {
    $routeProvider.
@@ -49,10 +49,10 @@ app.config( function($routeProvider) {
 //    */
 //   $("#player-setup").show();
 
-  
+
 //     When any button with card__link class is clicked,
 //     move on to the next view.
-   
+
 //   $(".card__link").click(function(e) {
 //     var nextCard = $(this).attr("next");
 //     var moveAlong = false;

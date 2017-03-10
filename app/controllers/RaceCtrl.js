@@ -1,13 +1,13 @@
 'use strict';
 
-app.controller("RaceCtrl", function($scope, PlayerFactory, $routeParams, GameFactory) {
+app.controller("RaceCtrl", function($scope, PlayerFactory, $routeParams, GameFactory, ngAudio) {
 
 $scope.isHuman = true;
 $scope.isElf = false;
 $scope.isDwarf = false;
 
 
-  
+
 
 
 // Input for player.name[ng-model]

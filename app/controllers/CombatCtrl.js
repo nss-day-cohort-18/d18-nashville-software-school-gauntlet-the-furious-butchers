@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, SpellbookFactory, WeaponFactory, GameFactory, $route, $window) {
+app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, SpellbookFactory, WeaponFactory, GameFactory, $route, $window, ngAudio) {
 ///////////////////
 //Initialize Modals
 ///////////////////
@@ -44,9 +44,6 @@ app.controller("CombatCtrl", function($scope, ClassesFactory, PlayerFactory, Spe
 //Create Monter
 //////////////////
 
-    if ($scope.player.gameCount === 4) {
-      $scope.player.gameCount = Math.floor((Math.random()*3)+1);
-    }
     if ($scope.player.gameCount === 1) {
       $scope.monster = PlayerFactory.getOrc();
       $scope.monster.randomMonClass();
