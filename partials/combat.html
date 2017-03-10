@@ -37,7 +37,7 @@
 		<h2 class="left-align">{{player.playerName}}</h2>
 	</div>
 	<div class="col s6">
-		<h2 class="right-align">{{monster.species}} the {{monster.class.name}}</h2>	
+		<h2 class="right-align">{{monster.species}} the {{monster.class.name}}</h2>
 	</div>
 </div>
 <div class="row">
@@ -70,10 +70,9 @@
 </div>
 <div class="row center-align">
 
-	<a class=" deep-orange lighten-2 waves-effect waves-light btn" ng-click="makeAttack()">Attack!!</a>
+	<a class=" deep-orange lighten-2 waves-effect waves-light btn" ng-audio="sounds/swordDraw.wav" ng-click="makeAttack()">Attack!!</a>
 
 </div>
 <div class="row center-align">
 	<div id="combat-log" class="panel hoverable blue-grey lighten-5"></div>
 </div>
-
