@@ -22,7 +22,7 @@ app.factory("PlayerFactory", () => {
     class: null,
     weapon: null,
     playerName: "unknown adventurer",
-    health: Math.floor(Math.random() * 40 + 50),
+    health: Math.floor(Math.random() * 40 + 90),
     limbs: ["head", "neck", "arm", "leg", "torso"],
     skinColor: "gray",
     strength: 90,
