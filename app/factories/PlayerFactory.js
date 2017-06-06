@@ -96,7 +96,7 @@ app.factory("PlayerFactory", () => {
   Orc.randomSkin = Math.round(Math.random() * (Orc.skinColors.length-1));
   Orc.skinColor = Orc.skinColors[Orc.randomSkin];
   Orc.allowedClasses = ["Shaman", "Warrior", "Berserker"];
-  Orc.speciesImage = "https://files.slack.com/files-tmb/T03F2SDTJ-F4GCCTW58-d922af1092/orcpiskal_360.png";
+  Orc.speciesImage = "../images/orcpiskal_360.png";
 
   var Skeleton = Object.create(Monster);
   Skeleton.species = "Skeleton";
